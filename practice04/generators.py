@@ -1,49 +1,28 @@
-#Task 1
-def squares(n):
-    for i in range(1, n + 1):
+def square(n):#ex1
+    for i in range(1, n+1):
         yield i * i
+n = int(input())
 
-# пример использования
-N = 5
-for sq in squares(N):
-    print(sq)
+for i in square(n):
+    print(i)
 
-#Task 2
-def jup_sandar(n):
-    for i in range(0,n+1):
-        if i%2==0:
+n = int(input())#ex2
+print(*(i for i in range(0, n + 1, 2)), sep=",")
+
+def devisible(n):#ex3
+    for i in range(n + 1):
+        if i % 3 == 0 and i%4 ==0:
             yield i
-    
 n=int(input())
-print(",".join(map(str, jup_sandar(n))))
+for i in devisible(n):
+    print(i)
 
-#Task 3
-def number(n):
-    for i in range(0, n + 1):
-        if i % 3 == 0 and i % 4 == 0:
-            yield i
-
-n = int(input())
-for x in number(n):
-    print(x, end=" ")
-
-#Task 4
-def square(a, b):
-    for i in range(a, b + 1):
+def squares(a,b):#ex4
+    for i in range(a, b+1):
         yield i * i
+a=list(map(int,input().split()))
+for i in squares(a[0],a[1]):
+    print(i)
 
-# тест
-a = 3
-b = 7
-for val in square(a, b):
-    print(val)
-
-
-#Task 5
-def countdown(n):
-    for i in range(n, -1, -1):
-        yield i
-
-n = int(input())
-for x in countdown(n):
-    print(x, end=" ")
+n=int(input())#ex5
+print(*(i for i in range(n, -1, -1)), sep=" ")
