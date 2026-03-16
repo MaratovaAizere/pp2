@@ -15,4 +15,4 @@ print(re.search(r"\$\d+\.\d{2}", "Price: $45.67").group())  # $45.67
 reg=r"(\d{4}-\d{2}-\d{2}) (\d{4}-\d{2}-\d{2})"
 r=re.search(reg, "Date: 2026-02-27 2025-06-18")
 if r:
-    print(' '.join(r.groups()))
+    print(' '.join(r.groups()))  # 2026-02-27 2025-06-18   

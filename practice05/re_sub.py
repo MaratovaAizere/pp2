@@ -3,7 +3,7 @@ import re
 print(re.sub(r"\$", "USD", "Total: $45.67"))  # Total: USD45.67
 
 # Example 2
-print(re.sub(r"\d+", "#", "Invoice 12345"))  # Invoice #####
+print(re.sub(r"\d+", "#", "Invoice 12345"))  # Invoice #
 
 # Example 3
 print(re.sub(r"[aeiou]", "*", "hello"))  # h*ll*
