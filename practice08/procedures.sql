@@ -24,26 +24,11 @@ LANGUAGE plpgsql
 AS $$
 DECLARE
     i INT;
-    invalid_data TEXT := '';
 BEGIN
     FOR i IN 1..array_length(p_names, 1) LOOP
-        
-        IF p_phones[i] ~ '^[0-9+]+$' THEN
-            
-            INSERT INTO phonebook(name, phone)
-            VALUES (p_names[i], p_phones[i])
-            ON CONFLICT (name) DO UPDATE
-            SET phone = EXCLUDED.phone;
-            
-        ELSE
-            invalid_data := invalid_data || p_names[i] || ' (' || p_phones[i] || '), ';
-        END IF;
-
+        INSERT INTO phonebook(name, phone)
+        VALUES (p_names[i], p_phones[i]);
     END LOOP;
-
-    IF invalid_data <> '' THEN
-        RAISE NOTICE 'Invalid data: %', invalid_data;
-    END IF;
 END;
 $$;
 
