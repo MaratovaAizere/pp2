@@ -18,7 +18,6 @@ RED = (255, 0, 0)
 YELLOW = (239, 228, 176)
 DARK = (30, 30, 30)
 
-font = pygame.font.SysFont("Arial", 28, bold=True)
 clock = pygame.time.Clock()
 
 base = os.path.dirname(__file__)
