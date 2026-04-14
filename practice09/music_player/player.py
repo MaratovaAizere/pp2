@@ -1,7 +1,6 @@
 import pygame
 import os
 
-
 class MusicPlayer:
     def __init__(self, music_folder):
         self.music_folder = music_folder
