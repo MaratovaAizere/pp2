@@ -1,0 +1,146 @@
+[
+    {
+        "name": "Sergey",
+        "email": "kimsergey@mail.ru",
+        "birthday": "2007-09-11",
+        "group": "Friend",
+        "phones": [
+            {
+                "number": "+770976543564",
+                "type": "mobile"
+            },
+            {
+                "number": "6453",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "name": "Kirill",
+        "email": "nastoyashimodnic@gmail.com",
+        "birthday": "2008-05-13",
+        "group": "Family",
+        "phones": [
+            {
+                "number": "87064534275",
+                "type": "mobile"
+            },
+            {
+                "number": "5342",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "name": "Tair",
+        "email": "bestiee@gmail.com",
+        "birthday": "2007-04-11",
+        "group": "Work",
+        "phones": [
+            {
+                "number": "+7707324853043",
+                "type": "mobile"
+            },
+            {
+                "number": "2435",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "name": "Puzana",
+        "email": "talgarsila@gmail.com",
+        "birthday": "2008-07-11",
+        "group": "Work",
+        "phones": [
+            {
+                "number": "87504357534",
+                "type": "mobile"
+            },
+            {
+                "number": "3758",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "name": "SultanSadik",
+        "email": "cringe@gmail.com",
+        "birthday": "2008-07-31",
+        "group": "Family",
+        "phones": [
+            {
+                "number": "87007259834",
+                "type": "mobile"
+            },
+            {
+                "number": "4216",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "name": "MichailPetrovich",
+        "email": "mafioznik@mail.ru",
+        "birthday": "2007-12-15",
+        "group": "Work",
+        "phones": [
+            {
+                "number": "8700535535",
+                "type": "mobile"
+            },
+            {
+                "number": "8294",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "name": "Zholdyz",
+        "email": "chocoladka@gmail.com",
+        "birthday": "2005-01-19",
+        "group": "Family",
+        "phones": [
+            {
+                "number": "87504536756",
+                "type": "mobile"
+            },
+            {
+                "number": "2156",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "name": "Dauren",
+        "email": "bayernonelove@gmail.com",
+        "birthday": "2007-01-05",
+        "group": "Friend",
+        "phones": [
+            {
+                "number": "87676767676",
+                "type": "mobile"
+            },
+            {
+                "number": "1488",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "name": "Misyabai",
+        "email": "alabailegenda@gmail.com",
+        "birthday": "2008-05-15",
+        "group": "Family",
+        "phones": [
+            {
+                "number": "+77002608565",
+                "type": "mobile"
+            },
+            {
+                "number": "8567",
+                "type": "home"
+            }
+        ]
+    }
+]
