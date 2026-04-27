@@ -16,6 +16,22 @@
         ]
     },
     {
+        "name": "Misyabai",
+        "email": "alabailegenda@gmail.com",
+        "birthday": "2008-05-15",
+        "group": "Family",
+        "phones": [
+            {
+                "number": "+77002608565",
+                "type": "mobile"
+            },
+            {
+                "number": "8567",
+                "type": "home"
+            }
+        ]
+    },
+    {
         "name": "Kirill",
         "email": "nastoyashimodnic@gmail.com",
         "birthday": "2008-05-13",
@@ -123,22 +139,6 @@
             },
             {
                 "number": "1488",
-                "type": "home"
-            }
-        ]
-    },
-    {
-        "name": "Misyabai",
-        "email": "alabailegenda@gmail.com",
-        "birthday": "2008-05-15",
-        "group": "Family",
-        "phones": [
-            {
-                "number": "+77002608565",
-                "type": "mobile"
-            },
-            {
-                "number": "8567",
                 "type": "home"
             }
         ]

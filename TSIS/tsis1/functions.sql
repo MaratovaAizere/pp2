@@ -14,7 +14,9 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE OR REPLACE FUNCTION pagination(limit_value int, offset_value int)
+DROP FUNCTION IF EXISTS pagination(integer, integer);
+
+CREATE FUNCTION pagination(limit_value int, offset_value int)
 RETURNS TABLE (
     id INT,
     name VARCHAR,

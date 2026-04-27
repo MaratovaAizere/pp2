@@ -35,6 +35,12 @@ font_sm = pygame.font.SysFont("Verdana", 15)
 db.create_tables()
 prefs = cfg_store.load()
 
+pygame.mixer.init()
+pygame.mixer.music.load("assets/bg_music.mp3")
+
+if prefs.get("sound", True):
+    pygame.mixer.music.play(-1)
+
 # ───────────────────────────────────────────────
 #  UI helpers
 # ───────────────────────────────────────────────
@@ -537,10 +543,21 @@ def screen_settings():
 
                 elif sound_rect.collidepoint(pos):
                     local["sound"] = not local["sound"]
+                    if local["sound"]:
+                        pygame.mixer.music.play(-1)
+                    else:
+                        pygame.mixer.music.stop()
 
                 elif BTN_SAVE.collidepoint(pos):
                     prefs.update(local)
                     cfg_store.save(prefs)
+                    # Sync mixer to the saved state (handles edge cases where
+                    # the toggle was flipped an even number of times before saving)
+                    if prefs["sound"]:
+                        if not pygame.mixer.music.get_busy():
+                            pygame.mixer.music.play(-1)
+                    else:
+                        pygame.mixer.music.stop()
                     return
 
                 else:
