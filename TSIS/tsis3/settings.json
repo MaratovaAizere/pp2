@@ -1,5 +1,11 @@
 {
   "sound": true,
   "car_color": "blue",
-  "difficulty": "normal"
+  "difficulty": "normal",
+  "snake_color": [
+    0,
+    200,
+    0
+  ],
+  "grid_overlay": true
 }
